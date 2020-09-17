@@ -9,15 +9,19 @@ function useGiphy(query) {
       try {
         setLoading(true);
         const response = await fetch(
-          `https://api.giphy.com/v1/gifs/search?api_key=ySGo48L37OkJ0cGH1zAfrGr8yobgFMQt&q=${query}&limit=10&offset=0&rating=G&lang=en`
+          `https://api-hoaxy.p.rapidapi.com/articles?sort_by=relevant&use_lucene_syntax=true&query=${query}`,
+          {
+            method: "GET",
+            headers: {
+              "x-rapidapi-host": "api-hoaxy.p.rapidapi.com",
+              "x-rapidapi-key":
+                "5205c32fa5mshca9ad07b3dd74ccp18bbedjsnb96ddfde337e",
+            },
+          }
         );
         const json = await response.json();
-
-        setResults(
-          json.data.map((item) => {
-            return item.images.preview.mp4;
-          })
-        );
+        console.log(json.articles);
+        setResults(json.articles);
       } finally {
         setLoading(false);
       }
@@ -35,29 +39,49 @@ export default function AsyncHooks() {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
   const [results, loading] = useGiphy(query);
-
+  const firstState = [
+    {
+      articles: {
+        title: "Lovely Day for an Egg",
+        canonical_url: "https://www.jackparker.dev",
+        site_type: "Owner",
+      },
+    },
+  ];
+  const onSubmit = (event) => {
+    if (event.which === 13 && !event.shiftKey) {
+      setQuery(search);
+    }
+  };
   return (
-    <div>
-      <h1>Async React Hooks</h1>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          setQuery(search);
-        }}
-      >
+    <>
+      <div className="form">
         <input
-          value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search for Gifs!"
-        />
-        <button type="submit">Search</button>
-      </form>
-      <br />
-      {loading ? (
-        <h1>GIVE ME GIFS</h1>
-      ) : (
-        results.map((item) => <video autoPlay loop key={item} src={item} />)
-      )}
-    </div>
+          name="search"
+          type="text"
+          value={search}
+          autoComplete="off"
+          required
+          onKeyPress={onSubmit}
+        ></input>
+        <label className="label-name" htmlFor="search">
+          <span className="content-name">Search</span>
+        </label>
+      </div>
+      <div className="sources-container">
+        {loading ? (
+          <h1>Loading...</h1>
+        ) : (
+          results.map((item) => (
+            <div>
+              <h1>{item.title}</h1>
+              <a href={item.canonical_url}>Link</a>
+              <p>Type: {item.site_type}</p>
+            </div>
+          ))
+        )}
+      </div>
+    </>
   );
 }
