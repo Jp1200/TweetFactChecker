@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Article from "./ArticleCard";
 function useGiphy(query) {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -73,13 +73,7 @@ export default function AsyncHooks() {
         {loading ? (
           <h1>Loading...</h1>
         ) : (
-          results.map((item) => (
-            <div>
-              <h1>{item.title}</h1>
-              <a href={item.canonical_url}>Link</a>
-              <p>Type: {item.site_type}</p>
-            </div>
-          ))
+          results.map((item) => <Article item={item} />)
         )}
       </div>
     </>

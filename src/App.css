@@ -76,6 +76,20 @@ body {
   animation: spin 300ms;
   transform: rotate(180deg);
 }
+.article-card {
+  width: 25%;
+  height: 25%;
+  margin: 10px;
+  padding: 10px;
+  background: lightblue;
+}
+.article-card h1 {
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 500;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
