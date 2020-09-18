@@ -6,9 +6,10 @@ import AsyncHooks from "./asyncLoad";
 
 function App() {
   return (
-    <div className="container">
+    // switched below className to info from "container"
+    <div className="info">
       <h1>
-        <i className="fab fa-twitter"></i>Tweet Source Search
+        <i className="fab fa-twitter twitter-icon"></i>Tweet Source Search
       </h1>
       <header>
         Copy and paste Tweets in the Search Bar to find related articles

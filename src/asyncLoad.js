@@ -69,13 +69,20 @@ export default function AsyncHooks() {
           <span className="content-name">Search</span>
         </label>
       </div>
-      <div className="sources-container">
+      <section className="sources-container">
+        {/* <Article
+          item={{
+            title: "Lovely Day for an Egg",
+            canonical_url: "https://www.jackparker.dev",
+            score: 52,
+          }}
+        /> */}
         {loading ? (
           <h1>Loading...</h1>
         ) : (
           results.map((item) => <Article item={item} />)
         )}
-      </div>
+      </section>
     </>
   );
 }
