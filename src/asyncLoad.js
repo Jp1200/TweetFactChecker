@@ -53,6 +53,7 @@ export default function AsyncHooks() {
       setQuery(search);
     }
   };
+
   return (
     <>
       <div className="form">

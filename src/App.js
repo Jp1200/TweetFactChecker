@@ -9,11 +9,13 @@ function App() {
     // switched below className to info from "container"
     <div className="info">
       <h1>
-        <i className="fab fa-twitter twitter-icon"></i>Tweet Source Search
+        <i className="fab fa-twitter twitter-icon"></i>Tweet Source Fact Check
+        Helper
       </h1>
       <header>
         Copy and paste Tweets in the Search Bar to find related articles
       </header>
+      <header>Press Enter to Search</header>
       <AsyncHooks />
     </div>
   );
