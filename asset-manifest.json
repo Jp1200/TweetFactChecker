@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/TweetFactChecker/static/css/main.26c4a6ff.chunk.css",
-    "main.js": "/TweetFactChecker/static/js/main.3f73eab0.chunk.js",
-    "main.js.map": "/TweetFactChecker/static/js/main.3f73eab0.chunk.js.map",
-    "runtime-main.js": "/TweetFactChecker/static/js/runtime-main.b44e03ee.js",
-    "runtime-main.js.map": "/TweetFactChecker/static/js/runtime-main.b44e03ee.js.map",
-    "static/js/2.2ed691a7.chunk.js": "/TweetFactChecker/static/js/2.2ed691a7.chunk.js",
-    "static/js/2.2ed691a7.chunk.js.map": "/TweetFactChecker/static/js/2.2ed691a7.chunk.js.map",
-    "index.html": "/TweetFactChecker/index.html",
-    "precache-manifest.8de1feeba86c97726b6e0dfb9f785a4b.js": "/TweetFactChecker/precache-manifest.8de1feeba86c97726b6e0dfb9f785a4b.js",
-    "service-worker.js": "/TweetFactChecker/service-worker.js",
-    "static/css/main.26c4a6ff.chunk.css.map": "/TweetFactChecker/static/css/main.26c4a6ff.chunk.css.map",
-    "static/js/2.2ed691a7.chunk.js.LICENSE.txt": "/TweetFactChecker/static/js/2.2ed691a7.chunk.js.LICENSE.txt"
+    "main.css": "/Jp1200.github.io/TweetFactChecker/static/css/main.26c4a6ff.chunk.css",
+    "main.js": "/Jp1200.github.io/TweetFactChecker/static/js/main.08a361d1.chunk.js",
+    "main.js.map": "/Jp1200.github.io/TweetFactChecker/static/js/main.08a361d1.chunk.js.map",
+    "runtime-main.js": "/Jp1200.github.io/TweetFactChecker/static/js/runtime-main.b2ff9dad.js",
+    "runtime-main.js.map": "/Jp1200.github.io/TweetFactChecker/static/js/runtime-main.b2ff9dad.js.map",
+    "static/js/2.2ed691a7.chunk.js": "/Jp1200.github.io/TweetFactChecker/static/js/2.2ed691a7.chunk.js",
+    "static/js/2.2ed691a7.chunk.js.map": "/Jp1200.github.io/TweetFactChecker/static/js/2.2ed691a7.chunk.js.map",
+    "index.html": "/Jp1200.github.io/TweetFactChecker/index.html",
+    "precache-manifest.c701fc0d3101a19dcf50cceba42bb0e8.js": "/Jp1200.github.io/TweetFactChecker/precache-manifest.c701fc0d3101a19dcf50cceba42bb0e8.js",
+    "service-worker.js": "/Jp1200.github.io/TweetFactChecker/service-worker.js",
+    "static/css/main.26c4a6ff.chunk.css.map": "/Jp1200.github.io/TweetFactChecker/static/css/main.26c4a6ff.chunk.css.map",
+    "static/js/2.2ed691a7.chunk.js.LICENSE.txt": "/Jp1200.github.io/TweetFactChecker/static/js/2.2ed691a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b44e03ee.js",
+    "static/js/runtime-main.b2ff9dad.js",
     "static/js/2.2ed691a7.chunk.js",
     "static/css/main.26c4a6ff.chunk.css",
-    "static/js/main.3f73eab0.chunk.js"
+    "static/js/main.08a361d1.chunk.js"
   ]
 }
