@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fact Checking Web App
+
+---------------------
+Designed for casual use, copy past tweets into the search bar to find articles related to the tweets. 
+Not a perfect article finder but works really well for anything political.
 
 ## Available Scripts
 
