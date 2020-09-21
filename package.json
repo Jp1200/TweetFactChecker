@@ -1,7 +1,7 @@
 {
   "name": "tweetsourcer",
   "version": "0.1.0",
-  "homepage": "http:/jp1200.github.io/TweetFactChecker",
+  "homepage": "https://jp1200.github.io/tweet-sourcer/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
